@@ -3,6 +3,7 @@ import "./navbar.css";
 import { Route, NavLink } from "react-router-dom";
 import resume from "../../components/resume/resume";
 import myskills from "../../components/skills/skills";
+import noPath from "../../components/noPath/noPath";
 
 class Navbar extends React.Component {
     render() {
@@ -39,6 +40,7 @@ class Navbar extends React.Component {
                 ></Route>
                 <Route path="/resume" exact component={resume}></Route>
                 <Route path="/skills" exact component={myskills}></Route>
+                <Route path="/" component={noPath}></Route>
             </>
         );
     }

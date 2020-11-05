@@ -2,7 +2,7 @@ import React from "react";
 import { Transition } from "react-transition-group";
 import myImg from "../../assets/images/nikhil.jpg";
 import "./profile.css";
-//src="https://blogs-images.forbes.com/olliebarder/files/2017/10/goku_ultra_instinct.jpg"
+
 const profile = (props) => {
     return (
         <div className="container1">
@@ -29,6 +29,7 @@ const profile = (props) => {
                         environments
                     </p>
                 </div>
+
                 <ul className="personal-info">
                     <li>
                         <label>Name:</label>
@@ -40,7 +41,12 @@ const profile = (props) => {
                     </li>
                     <li>
                         <label>Linkedin:</label>
-                        <span>linkedin.com</span>
+                        <a
+                            target="_blank"
+                            href="https://www.linkedin.com/in/nikhil-gawade-a89864148"
+                        >
+                            www.linkedin.com/in/nikhil-gawade-a89864148
+                        </a>
                     </li>
                 </ul>
             </div>
