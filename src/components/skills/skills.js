@@ -4,7 +4,7 @@ import "./skills.css";
 
 const skills = (props) => {
     return (
-        <div class="skill">
+        <div className="skill">
             {skillSet.softwareSkills.map((skills) => {
                 return (
                     <div>

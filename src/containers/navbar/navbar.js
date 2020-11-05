@@ -8,22 +8,22 @@ class Navbar extends React.Component {
     render() {
         return (
             <>
-                <div class="nav">
-                    <div class="nav1">
+                <div className="nav">
+                    <div className="nav1">
                         <NavLink to="/" exact>
                             <img src="https://www.flaticon.com/svg/static/icons/svg/1661/1661691.svg" />
                             PROFILE
                         </NavLink>
                     </div>
 
-                    <div class="nav1">
+                    <div className="nav1">
                         <NavLink to="/resume" exact>
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQETdr9udgdX6PE39HeNWEPgpKAbN0g8Epn9w&usqp=CAU" />
                             Resume
                         </NavLink>
                     </div>
 
-                    <div class="nav1">
+                    <div className="nav1">
                         <NavLink to="/skills" exact>
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSuaxuCl-tyOMjfTNy-jlX0xF-qKWybFP8AhA&usqp=CAU" />
                             Skills

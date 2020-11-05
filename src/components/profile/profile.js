@@ -5,10 +5,10 @@ import "./profile.css";
 //src="https://blogs-images.forbes.com/olliebarder/files/2017/10/goku_ultra_instinct.jpg"
 const profile = (props) => {
     return (
-        <div class="container1">
-            <div class="Profile">
-                <div class="about">
-                    <div class="profilePic">
+        <div className="container1">
+            <div className="Profile">
+                <div className="about">
+                    <div className="profilePic">
                         <img
                             src={myImg}
                             style={{
@@ -29,7 +29,7 @@ const profile = (props) => {
                         environments
                     </p>
                 </div>
-                <ul class="personal-info">
+                <ul className="personal-info">
                     <li>
                         <label>Name:</label>
                         <span>NIKHIL GAWADE</span>
