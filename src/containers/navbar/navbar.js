@@ -1,6 +1,6 @@
 import React from "react";
 import "./navbar.css";
-import { Route, NavLink } from "react-router-dom";
+import { Route, NavLink, Switch } from "react-router-dom";
 import resume from "../../components/resume/resume";
 import myskills from "../../components/skills/skills";
 import noPath from "../../components/noPath/noPath";
@@ -31,16 +31,18 @@ class Navbar extends React.Component {
                         </NavLink>
                     </div>
                 </div>
-                <Route
-                    path="/"
-                    exact
-                    render={() => {
-                        return <></>;
-                    }}
-                ></Route>
-                <Route path="/resume" exact component={resume}></Route>
-                <Route path="/skills" exact component={myskills}></Route>
-                <Route path="/" component={noPath}></Route>
+                <Switch>
+                    <Route
+                        path="/"
+                        exact
+                        render={() => {
+                            return <></>;
+                        }}
+                    ></Route>
+                    <Route path="/resume" exact component={resume}></Route>
+                    <Route path="/skills" exact component={myskills}></Route>
+                    <Route path="/" component={noPath}></Route>
+                </Switch>
             </>
         );
     }
